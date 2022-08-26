@@ -1,6 +1,6 @@
-###### This app uses the Omdb API.
+This app uses the Omdb API.
 
-######How it's supposed to work:
+``How it's supposed to work:```
 ######When the user types a title in the searchbar, the search button changes query state to what is in the search input.
 ######Then Redux uses movieSlice to make the returned data available to other components.
 
