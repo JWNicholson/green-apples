@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+// import React, { useState } from 'react';
+// import {Route} from "react-router-dom"
+// import SavedList from './Movies/SavedList';
+ import MovieList from "./Movies/MovieList"
+// import Movie from './Movies/Movie';
+
+const App = () => {
+ <NavbarComponent />
+  // const [savedList, setSavedList] = useState( [] );
+
+  // const addToSavedList = movie => {
+  //   setSavedList( [...savedList, movie] );
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>Movie App</h2>
+      <MovieList />
+      {/* <SavedList list={savedList} />
+      <div>
+        <Route exact path = "/" component= {MovieList}/>
+
+        <Route path='/movies/:id'
+        render={props => <Movie {...props}
+          addToSavedList={addToSavedList} />}
+          
+      />
+      </div> */}
     </div>
   );
-}
+};
 
 export default App;
